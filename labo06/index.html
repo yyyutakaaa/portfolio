@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adoptie Centrum</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-dark" href="#">Adoptie Centrum</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#onze-honden">Onze honden</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#successCarousel">Gallerij</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#adopteer">Adopteer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="hero d-flex align-items-center justify-content-center text-center text-white"
+      style="
+        background: url('./images/hero.webp') no-repeat center center;
+        background-size: cover;
+        height: 90vh;
+      "
+    >
+      <div class="container">
+        <h1 class="display-4 mb-3">Vind jouw perfecte hond</h1>
+        <p class="lead mb-4">Geef een hond een liefdevolle thuis</p>
+        <a href="#" class="btn btn-success btn-lg">Start adoptieproces</a>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Adoptie mogelijkheden</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/standard.webp"
+                class="card-img-top"
+                alt="Standaard adoptie"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Standaard adoptie</h5>
+                <p class="card-text">
+                  Inclusief basisvaccinaties, chip, en cursus.
+                </p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle"></i> Medische check-up</li>
+                  <li><i class="bi bi-check-circle"></i> Vaccinaties</li>
+                  <li><i class="bi bi-check-circle"></i> Microchip</li>
+                </ul>
+                <h6 class="text-success">€250 adoptiekosten</h6>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-success">Meer info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/premium.webp"
+                class="card-img-top"
+                alt="Premium pakket"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Premium pakket</h5>
+                <p class="card-text">
+                  Alles van standaard + extra's zoals puppytraining.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-check-circle"></i> Alles van standaard
+                  </li>
+                  <li><i class="bi bi-check-circle"></i> 6 Puppytrainingen</li>
+                  <li><i class="bi bi-check-circle"></i> Starterkit</li>
+                </ul>
+                <h6 class="text-success">€400 adoptiekosten</h6>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-success">Meer info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./images/sponsor.webp"
+                class="card-img-top"
+                alt="Sponsor een hond"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sponsor een hond</h5>
+                <p class="card-text">
+                  Wil je een hond helpen zonder hem te adopteren?
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-check-circle"></i> Maandelijkse updates
+                  </li>
+                  <li><i class="bi bi-check-circle"></i> Foto's en video's</li>
+                  <li><i class="bi bi-check-circle"></i> Bezoekmoment</li>
+                </ul>
+                <h6 class="text-success">€15 per maand</h6>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-success">Meer info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-dark text-light">
+      <div class="container">
+        <h2 class="mb-4 text-center">Onze puppy's</h2>
+        <div class="row d-flex justify-content-center" id="puppy-gallery">
+          <div class="col-12 col-sm-4 col-md-3 mb-4">
+            <img
+              src="./images/thumbnails/max.webp"
+              class="img-fluid"
+              alt="Puppy Max"
+              data-caption="Max - 5 maanden"
+            />
+            <p class="text-center mt-2">Max - 5 maanden</p>
+          </div>
+          <div class="col-12 col-sm-4 col-md-3 mb-4">
+            <img
+              src="./images/thumbnails/luna.webp"
+              class="img-fluid"
+              alt="Puppy Luna"
+              data-caption="Luna - 2 maanden"
+            />
+            <p class="text-center mt-2">Luna - 2 maanden</p>
+          </div>
+          <div class="col-12 col-sm-4 col-md-3 mb-4">
+            <img
+              src="./images/thumbnails/charlie.webp"
+              class="img-fluid"
+              alt="Puppy Charlie"
+              data-caption="Charlie - 5 maanden"
+            />
+            <p class="text-center mt-2">Charlie - 5 maanden</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Succesverhalen</h2>
+        <div
+          id="successCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/rocky.webp" alt="Rocky" class="w-100" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Rocky's transformatie</h5>
+                <p>Van verlegen pup naar vrolijke familiehond.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/bella.webp" alt="Bella" class="w-100" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Bella vond geluk</h5>
+                <p>Met wat extra zorg en veel liefde.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/milo.webp" alt="Milo" class="w-100" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Milo's nieuwe leven</h5>
+                <p>Nu heerlijk ravotten in het park.</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#successCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Vorige</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#successCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Volgende</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-light py-3">
+      <div class="container">
+        <p class="m-0 text-center">
+          © 2024 Adoptie centrum. Alle rechten voorbehouden.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.js"></script>
+  </body>
+</html>

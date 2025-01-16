@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body::after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+h3 {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h2 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: light;
+}
+.text-center {
+  text-align: center;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
+.padding-10 {
+  padding: 10px;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.border-radius-5 {
+  border-radius: 5px;
+}
+.box-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.font-bold {
+  font-weight: bold;
+}
+.color-gray {
+  color: #888;
+}
+.btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #218838;
+}
+.product-comparison {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.comparison-item {
+  max-width: 320px;
+  text-align: center;
+}
+.comparison-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.product-card {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.product-image {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.product-title,
+.product-name {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 20px;
+}
+.product-price {
+  text-align: center;
+  color: #888;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.box-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.product-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.product-btn:hover {
+  background-color: #218838;
+}

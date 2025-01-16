@@ -1,0 +1,411 @@
+:root {
+    --primary-color: #1e3c72;
+    --secondary-color: #2a5298;
+    --background-color: #f0f4f8;
+    --white-color: #ffffff;
+    --text-color: #333333;
+    --light-text-color: #666666;
+    --accent-color: #ff7e5f;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+    --font-primary: 'Arial', sans-serif;
+    --border-radius: 8px;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+    padding: 1rem;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    animation: fadeInDown 1s ease-out;
+}
+header .logo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    animation: fadeIn 1s ease-out;
+}
+header .logo p {
+    font-size: 1rem;
+    animation: fadeIn 1.5s ease-out;
+}
+nav ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    animation: fadeInUp 2s ease-out;
+}
+nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+    background: rgba(255, 255, 255, 0.1);
+}
+nav ul li a:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+}
+#introduction {
+    background-color: var(--white-color);
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    animation: slideInUp 1s ease-out;
+}
+#introduction h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+#introduction p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--light-text-color);
+}
+#introduction a {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+#introduction a:hover {
+    background: var(--accent-color);
+    transform: scale(1.05);
+}
+#latest-exercises {
+    background-color: var(--white-color);
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    animation: fadeIn 1.5s ease-out;
+}
+#latest-exercises h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+.exercise-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+.exercise {
+    background-color: var(--white-color);
+    text-align: center;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+.exercise img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    animation: zoomIn 1s ease-out;
+}
+.exercise:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+#socials {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    animation: fadeIn 1.5s ease-out;
+}
+#socials h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+#socials a {
+    display: inline-block;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    background-color: #e0e0e0;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+#socials a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    animation: fadeInUp 1s ease-out;
+}
+#personal-info,
+#education,
+#job-experience,
+#skills {
+    background-color: var(--white-color);
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    animation: fadeIn 1.5s ease-out;
+}
+#personal-info .personal-content {
+    max-width: 300px;
+    margin: 0 auto;
+}
+#personal-info img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    animation: rotateIn 1s ease-out;
+}
+#personal-info .personal-content p {
+    text-align: left;
+    margin-bottom: 1rem;
+    color: var(--light-text-color);
+}
+#job-experience table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background: linear-gradient(145deg, #ffffff, #f2f2f2);
+    box-shadow: var(--box-shadow);
+}
+#job-experience table {
+    table-layout: fixed;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+#job-experience th,
+#job-experience td {
+    overflow-wrap: break-word;   
+    padding: 0.8rem;
+}
+#job-experience tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+#job-experience tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.2s ease-in-out;
+}
+#education h2,
+#job-experience h2,
+#skills h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e0e0e0;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+#skills h3 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+#skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0;
+}
+#skills ul li {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+#skills ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+#skills ul li strong {
+    display: block;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+#skills ul li p {
+    color: #555555;
+    font-size: 1rem;
+}
+#contact-form {
+    background-color: var(--white-color);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+}
+#contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+#contact-form p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--light-text-color);
+}
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#contact-form label {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    text-align: left;
+    padding-left: 1rem;
+}
+#contact-form input,
+#contact-form textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 100%;
+}
+#contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+#contact-form button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto 0;
+}
+#contact-form button:hover {
+    background: var(--accent-color);
+    transform: scale(1.05);
+}
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .exercise-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    #job-experience table {
+        font-size: 0.95rem;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-360deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}

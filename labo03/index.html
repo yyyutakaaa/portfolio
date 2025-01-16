@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labo 03</title>
+  <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h3 class="visually-hidden">Navigatieoefening</h3>
+      <ul>
+        <li><a href="#voorbereiding">Voorbereiding</a></li>
+        <li><a href="#columns">Columns</a></li>
+        <li><a href="#nav">Nav</a></li>
+        <li><a href="#cards">Cards</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="voorbereiding">
+        <h2>Voorbereiding</h2>
+        <h3>Stap 1</h3>
+        <ul>
+          <li>Maak een nieuw project.</li>
+          <li>Zorg voor een index.html en een styles.css.</li>
+          <li>Schrijf alle HTML, vergeet lang en title niet.</li>
+        </ul>
+        <h3>Stap 2</h3>
+        <ul>
+          <li>Voeg normalize.css toe via een link-tag in de head.</li>
+          <li>Voeg een Google font toe in de head (Fredoka).</li>
+          <li>Koppel je eigen styles.css aan je HTML.</li>
+        </ul>
+        <h3>Stap 3: CSS</h3>
+        <ol>
+          <li>'Corrigeer' de box-sizing property van alle elementen en van alle :before en :after pseudo-elementen.</li>
+          <li>Maak een :root selector:
+            <ul>
+              <li>Pas de font-family aan naar Fredoka (en fallback font).</li>
+              <li>Pas de line-height aan naar 1.6.</li>
+              <li>Pas scroll behavior aan naar 'smooth'.</li>
+              <li>Maak variabelen: --bg: #FFFDFF en --primary: #202026.</li>
+              <li>Gebruik deze variabelen voor de achtergrondkleur en tekstkleur.</li>
+            </ul>
+          </li>
+          <li>Maak een body selector en zet de margin op 0.</li>
+          <li>Maak een .container:
+            <ul>
+              <li>max-width: 80rem</li>
+              <li>linker en rechter margin is auto</li>
+              <li>linker en rechter padding is 1rem</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section id="columns">
+        <h2>Oefening 1: Columns</h2>
+        <div class="row">
+          <div>Kolom 1</div>
+          <div>Kolom 2</div>
+        </div>
+      </section>
+
+      <section id="nav">
+        <h2>Oefening 2: Nav</h2>
+        <nav>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section id="cards">
+        <h2>Oefening 3: Cards</h2>
+        <ul class="cards">
+          <li>
+            <img src="https://picsum.photos/350/150?1" alt="">
+            <div class="content">
+              <h3>Card title 1</h3>
+              <p>Card text Lorem ipsum dolor sit amet.</p>
+              <a href="#">Read more about title 1</a>
+              <a href="#" class="overlay-link">Read more about title 1</a>
+            </div>
+          </li>
+          <li>
+            <img src="https://picsum.photos/350/150?2" alt="">
+            <div class="content">
+              <h3>Card title 2</h3>
+              <p>Card text Lorem ipsum dolor sit amet.</p>
+              <a href="#">Read more about title 2</a>
+              <a href="#" class="overlay-link">Read more about title 2</a>
+            </div>
+          </li>
+          <li>
+            <img src="https://picsum.photos/350/150?3" alt="">
+            <div class="content">
+              <h3>Card title 3</h3>
+              <p>Card text Lorem ipsum dolor sit amet.</p>
+              <a href="#">Read more about title 3</a>
+              <a href="#" class="overlay-link">Read more about title 3</a>
+            </div>
+          </li>
+          <li>
+            <img src="https://picsum.photos/350/150?4" alt="">
+            <div class="content">
+              <h3>Card title 4</h3>
+              <p>Card text Lorem ipsum dolor sit amet.</p>
+              <a href="#">Read more about title 4</a>
+              <a href="#" class="overlay-link">Read more about title 4</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024</p>
+    </div>
+  </footer>
+
+</body>
+</html>

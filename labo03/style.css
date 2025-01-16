@@ -1,0 +1,210 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --bg: #FFFDFF;
+  --primary: #202026;
+  --accent: #ab43c5;
+  --secondary: #f3f3f3;
+  --text-light: #ffffff;
+  --card-bg: #ffffff;
+  --card-border: #ccc;
+  --row-bg: #f9f9f9;
+  font-family: 'Fredoka', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+
+.container {
+  max-inline-size: 80rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; 
+  height: 1px; 
+  padding: 0; 
+  margin: -1px; 
+  overflow: hidden; 
+  clip: rect(0,0,0,0); 
+  white-space: nowrap; 
+  border: 0;
+}
+
+
+header nav {
+  background-color: var(--accent);
+  padding: 1rem 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-light);
+  background-color: transparent;
+  border-radius: 0.3rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus-visible {
+  background-color: #540ebc;
+  color: #ab43c5;
+}
+
+
+.row {
+  display: flex;
+  gap: 2rem;
+}
+
+.row > div {
+  border: 1px dashed #999;
+  padding: 1rem;
+  background-color: var(--row-bg);
+}
+
+.row > div:first-child {
+  flex: 2;
+}
+
+.row > div:last-child {
+  flex: 1;
+}
+
+
+section#nav nav ul {
+  display: flex;
+  gap: 1rem;
+  margin-inline-start: 0;
+}
+
+section#nav nav ul li a {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: var(--primary);
+  background-color: var(--secondary);
+  border-radius: 0.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+section#nav nav ul li a:hover,
+section#nav nav ul li a:focus-visible {
+  background-color: var(--accent);
+  color: var(--text-light);
+}
+
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.cards > li {
+  flex: 1 1 18rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.cards > li img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cards > li .content {
+  padding: 1rem;
+  flex: 1 1 auto;
+}
+
+.cards > li .overlay-link {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0,0,0,0.3);
+  color: var(--text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cards > li:hover .overlay-link,
+.cards > li:focus-within .overlay-link {
+  opacity: 1;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--secondary);
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  margin: 0;
+  color: var(--primary);
+}
+
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}

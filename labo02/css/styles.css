@@ -1,0 +1,116 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .container--narrow {
+    max-width: 40rem;
+  }
+  
+  header {
+    background-color: #00002E;
+    color: #FFFDFF;
+    padding: 20px 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: block;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: inherit;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #333366;
+  }
+  
+  nav a:focus-visible {
+    outline: 4px dotted #FFFDFF;
+  }
+  
+  nav ul li:nth-child(2) a {
+    background-color: #FFD700;
+    color: #000;
+  }
+  
+  nav ul li:nth-child(2) a:hover {
+    background-color: #FF6347;
+  }
+  
+  footer .container--narrow > :last-child {
+    margin: 0;
+  }
+  
+  h2 + p {
+    font-style: italic;
+  }
+  
+  a[href*="mozilla"] {
+    background-color: rgba(255, 165, 0, 0.5);
+  }
+  
+  .highlight {
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .m-1 {
+    margin: 1rem;
+  }
+  
+  .m-2 {
+    margin: 2rem;
+  }
+  
+  .p-1 {
+    padding: 1rem;
+  }
+  
+  .p-2 {
+    padding: 2rem;
+  }
+  
+  main {
+    padding-top: 2vh;
+    padding-bottom: 4vw;
+  }
+  
+  footer .highlight {
+    color: #3CB497;
+    font-weight: normal;
+    font-style: normal;
+  }

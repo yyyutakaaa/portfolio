@@ -1,0 +1,231 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+:root {
+  --accent: #ab43c5;
+  --text-light: #ffffff;
+  --primary: #202026;
+  --bg: #FFFDFF;
+  --card-bg: #ffffff;
+  --card-border: #ccc;
+  --secondary: #f3f3f3;
+  --link-bg: #e74c3c;
+  --link-hover-bg: #c0392b;
+  --button-bg: #2ecc71;
+  --button-hover-bg: #27ae60;
+  font-family: 'Fredoka', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+main, footer {
+  padding: 0 3rem;
+}
+header nav {
+  background-color: var(--accent);
+  padding: 1rem 0;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-light);
+  background-color: transparent;
+  border-radius: 0.3rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+header nav ul li a:hover,
+header nav ul li a:focus-visible {
+  background-color: #540ebc;
+  color: #ab43c5;
+}
+
+section {
+  padding-top: 3rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer {
+  margin-top: 5rem;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--secondary);
+  border-top: 1px solid #ccc;
+}
+footer p {
+  margin: 0;
+  color: var(--primary);
+}
+
+.cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  justify-items: start;
+}
+.cards > li {
+  flex: 1 1 18rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+.cards > li img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.cards > li h3 {
+  margin: 1rem 0 0.5rem 1rem;
+}
+.cards > li a:first-of-type {
+  margin: 0 1rem 1rem 1rem;
+}
+.cards > li p {
+  margin: 0.5rem 1rem 1rem 1rem;
+}
+.cards > li .overlay-link {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0,0,0,0.3);
+  color: var(--text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.cards > li:hover .overlay-link,
+.cards > li:focus-within .overlay-link {
+  opacity: 1;
+}
+@media (min-width: 600px) {
+  .cards > li {
+    flex: 1 1 calc(33.333% - 2rem);
+  }
+}
+@media (min-width: 900px) {
+  .cards > li {
+    flex: 0 0 33.333%;
+  }
+}
+
+
+
+#oef4 {
+  margin: 4rem 0;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+#oef4 h2 {
+  margin-bottom: 1rem;
+}
+
+
+#oef4 .link,
+#oef4 .button {
+  display: inline-flex;
+  margin-right: 1rem;  
+  min-width: 150px;
+}
+
+
+#oef4 .button {
+  margin-right: 0;
+}
+
+
+#oef4 .link a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: #800000;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+#oef4 .link a:before {
+  content: "";
+  background-image: url('deleteicon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+
+#oef4 .link a:hover,
+#oef4 .link a:focus {
+  background-color: #ffe6e6;
+  transform: translateY(-2px);
+}
+
+
+#oef4 .button a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #00830d;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+#oef4 .button a:hover,
+#oef4 .button a:focus {
+  background-color: black;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  #oef4 {
+      padding: 1rem;
+  }
+  #oef4 .link,
+  #oef4 .button {
+      display: block;     
+      width: 100%;        
+      margin-right: 0;    
+      margin-bottom: 1rem;
+  }
+  #oef4 .button:last-child {
+      margin-bottom: 0;
+  }
+}

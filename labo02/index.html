@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labo 02</title>
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container container--narrow">
+            <nav>
+                <ul>
+                    <li><a href="#introductieoefening">Introductieoefening</a></li>
+                    <li><a href="#vragen">Vragen</a></li>
+                    <li><a href="#nav">Nav</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container container--narrow">
+            <section id="introductieoefening">
+                <h1>Labo 02</h1>
+                <h2>Introductieoefening</h2>
+                <p>Start een <span class="highlight">nieuw project</span> in je IDE naar keuze.</p>
+                <ol>
+                    <li>Zorg voor een index.html en een styles.css.</li>
+                    <li>Pas je HTML lang attribuut aan.</li>
+                    <li>Geef je document de titel 'Labo 02'.</li>
+                </ol>
+            </section>
+
+            <section id="html">
+                <h2>Stap 1: HTML</h2>
+                <ol>
+                    <li>Vergeet je landmark regions niet!</li>
+                    <li>De hoofdinhoud (main) op in sections.</li>
+                    <li>Pas alles toe wat je geleerd hebt in week 1.</li>
+                    <li>Tip: de links in de navigatie zijn <a href="#">sample page links</a>.</li>
+                    <li>Valideer je code regelmatig met de <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C-validator</a> en met de <a href="https://www.deque.com/axe/devtools/" target="_blank" rel="noopener">aXe devtools</a>.</li>
+                </ol>
+            </section>
+
+            <section id="link-tags">
+                <h2>Stap 2: link-tags</h2>
+                <ol>
+                    <li>Voeg <a href="https://unpkg.com/@csstools/normalize.css" target="_blank" rel="noopener"><code>normalize.css</code></a> toe in de head van je HTML-document.</li>
+                    <li>Voeg <span class="highlight">Google font (Montserrat)</span> toe in de head van je HTML-document.</li>
+                    <li>Koppel je eigen <code>styles.css</code> aan je HTML.</li>
+                </ol>
+            </section>
+
+            <section id="start-css">
+                <h2>Stap 3: start CSS</h2>
+                <ol>
+                    <li>Corrigeer de box-sizing property van alle elementen en van alle <code>::before</code> en <code>::after</code> pseudo-elementen. Zie theorie!</li>
+                    <li>Maak een selector voor het root element: &rarr; <code>:root { ... }</code>
+                        <ul>
+                            <li>Pas de background-color aan naar <code>#ffffff</code>.</li>
+                            <li>De font-family moet van Montserrat zijn en vergeet je fallback font niet!</li>
+                            <li>Pas de font-size aan naar 1.6 rem.</li>
+                            <li>Zet scroll-behavior op smooth.</li>
+                        </ul>
+                    </li>
+                    <li>Maak een selector voor body: <code>body &rarr; { ... }</code><br>
+                        Zet de margin op 0.</li>
+                </ol>
+            </section>
+
+            <section id="vragen">
+                <h2>Stap 4: vragen</h2>
+                <ol>
+                    <li>Wat doet <code>normalize.css</code>?<br>
+                        <ul>
+                            <li>Normalize.css is een klein CSS-bestandje dat ervoor zorgt dat de standaardstijlen in verschillende browsers gelijk zijn, zodat HTML-elementen overal hetzelfde eruitzien.</li>
+                        </ul>
+                    </li>
+                    <li>Wat is een fallback font, wat doet het, welk heb je gekozen en waarom?<br>
+                        <ul>
+                            <li>Een fallback font is een reservelettertype dat wordt gebruikt als het primaire lettertype niet beschikbaar is. Ik heb gekozen voor Arial als fallback font omdat het breed ondersteund wordt en een vergelijkbare uitstraling heeft als Montserrat.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="nav">
+                <h2>Nav</h2>
+                <img src="./images/nav_screenshot.png" alt="nav script screenshot">
+            </section>
+
+            <section id="mozilla">
+                <h2>Mozilla Websites</h2>
+                <a href="https://www.mozilla.org">Mozilla Website</a>
+                <a href="https://google.com">Google</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container container--narrow">
+            <p>&copy; 2024 <span class="highlight">ELOICT</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

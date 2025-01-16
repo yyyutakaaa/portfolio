@@ -1,0 +1,34 @@
+.hero {
+  background: url('./images/hero.webp') no-repeat center center; 
+  background-size: cover;
+  height: 90vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; 
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.card img {
+  object-fit: cover;
+  height: 200px; 
+}
+footer {
+  padding: 1rem;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
